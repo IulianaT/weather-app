@@ -1,0 +1,23 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@500&display=swap');
+
+.main{
+  height:100vh;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
+}
+.weather-card{
+  display: flex;
+  justify-content: space-between;
+}
+.app-header{
+  font-size: 25px;
+  font-family:'Playpen+Sans';
+  margin:20px;
+}
+.weather-card-child{
+  font-family: 'Playpen+Sans' !important;
+  margin-top: 10px;
+}
