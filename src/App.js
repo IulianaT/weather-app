@@ -32,19 +32,10 @@ function App() {
         .then((weatherData) => {
           console.log(weatherData);
           setTemperature(weatherData.main.temp);
-          setHumidity(weatherData.main.humidity)
-          setSunset(weatherData.sys.sunset)
-          setSunrise(weatherData.sys.sunrise)
-          
-          setCity(weatherData.name)
-          // setloading(false)
-          //setTemprature(weatherData.data.current.temp);
-          //setSunset(weatherData.data.current.sunset)
-          //setSunrise(weatherData.data.current.sunrise)
-          // setHumidity(weatherData.data.current.humidity)
-          //setCity(weatherData.data.timezone)
-          //setIcon(weatherData.data.current.weather[0].main)
-          //setForecast(weatherData.data.daily)
+          setHumidity(weatherData.main.humidity);
+          setSunset(weatherData.sys.sunset);
+          setSunrise(weatherData.sys.sunrise);
+          setCity(weatherData.name);
         });
     };
     fetchData();
@@ -52,11 +43,13 @@ function App() {
   return (
     <div className="main">
       <Header />
-      <WeatherCard temperature={temperature}
-          humidity={humidity}
-          sunrise={sunrise}
-          sunset={sunset}
-          city={city}/>
+      <WeatherCard
+        temperature={temperature}
+        humidity={humidity}
+        sunrise={sunrise}
+        sunset={sunset}
+        city={city}
+      />
     </div>
   );
 }
