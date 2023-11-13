@@ -1,12 +1,17 @@
 import React from "react";
 import moment from "moment";
 import { Card, Feed } from "semantic-ui-react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+  import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
-const WeatherCard = ({ temperature, city, sunrise, sunset, humidity }) => (
-  <Card>
-    <Card.Content>
-      <Card.Header className="weather-card-child">{city}</Card.Header>
-    </Card.Content>
+const WeatherCard = ({ temperature, city, sunrise, sunset, humidity, icon}) => (
+  <Card className="weather-card-main">
+  <Card.Content className="weather-card">
+    <Card.Header className="weather-card-child">{city}</Card.Header>
+    <div className="icon-container">
+    <FontAwesomeIcon icon={faCoffee} />
+    </div>
+  </Card.Content>
     <Card.Content>
       <Feed>
         <Feed.Event>

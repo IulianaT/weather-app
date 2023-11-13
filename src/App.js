@@ -14,6 +14,8 @@ function App() {
   const [humidity, setHumidity] = useState(null);
   const [sunrise, setSunrise] = useState(null);
   const [sunset, setSunset] = useState(null);
+  const [icon, setIcon] = useState('');
+  //const [forcast, setForecast] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -36,6 +38,8 @@ function App() {
           setSunset(weatherData.sys.sunset);
           setSunrise(weatherData.sys.sunrise);
           setCity(weatherData.name);
+          setIcon(weatherData.weather[0].main)
+          //setForecast(weatherData.data.daily)
         });
     };
     fetchData();
