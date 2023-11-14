@@ -1,8 +1,6 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@500&display=swap");
 
 .main {
-  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,49 +8,49 @@
   padding: 20px;
 }
 
-.weather-card{
+.weather-card {
   display: flex;
   justify-content: space-between;
 }
 
-.app-header{
-  font-family: 'Playpen+Sans';
+.app-header {
+  font-family: "Playpen+Sans";
   margin: 20px;
   font-size: 35px;
   color: #2196f3;
   font-weight: 600;
 }
 
-.weather-card-child{
-  font-family: 'Playpen+Sans' !important;
+.weather-card-child {
+  font-family: "Playpen+Sans" !important;
   margin-top: 10px;
 }
 
-.weather-card-main{
+.weather-card-main {
   width: 400px !important;
   border-top: 2px solid red !important;
 }
 
-.forecast-card{
+.forecast-card {
   border-top: 2px solid #ffc107 !important;
 }
 
-.icon-container{
+.icon-container {
   position: relative;
   right: -110px;
 }
 
-.temp-desc{
+.temp-desc {
   text-transform: capitalize;
-  font-family: 'Playpen+Sans';
+  font-family: "Playpen+Sans";
 }
 
-.forecast-header{
-  font-family: 'Playpen+Sans' !important;
+.forecast-header {
+  font-family: "Playpen+Sans" !important;
 }
 
-.forecast-main-header{
-  font-family: 'Playpen+Sans';
+.forecast-main-header {
+  font-family: "Playpen+Sans";
   margin: 20px;
   font-size: 26px;
   color: #2196f3;
@@ -60,8 +58,8 @@
   text-align: center;
 }
 
-.forecast-date{
-  font-family: 'Playpen+Sans' !important;
-  font-size: 15px !important; 
+.forecast-date {
+  font-family: "Playpen+Sans" !important;
+  font-size: 15px !important;
   margin-bottom: 20px;
 }

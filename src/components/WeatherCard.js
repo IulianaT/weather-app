@@ -58,7 +58,7 @@ export default function WeatherCard({
               </h5>
               <div className="weather-card">
                 <div className="weather-card-child">
-                  <b>Temprature</b>: {Math.floor(temperature)} ℃
+                  <b>Temperature</b>: {Math.floor(temperature)} ℃
                 </div>
                 <div className="weather-card-child">
                   <b>Humidity</b>: {humidity} %
